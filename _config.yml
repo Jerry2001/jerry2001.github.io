@@ -2,9 +2,9 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Phuc (Jerry) Hong Ngo # the website title (if blank, full name will be used instead)
-first_name: Phuc (Jerry)
-middle_name: H.
+title: Jerry Ngo # the website title (if blank, full name will be used instead)
+first_name: Phuc
+middle_name: Hong
 last_name: Ngo
 email: ngop@mit.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
