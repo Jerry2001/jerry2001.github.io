@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: <a href="https://www.beloit.edu/">Beloit College</a>. Beloit, Wisconsin, USA.
 
 profile:
   align: right
