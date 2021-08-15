@@ -139,7 +139,7 @@ plugins:
   - jemoji
 
 # Extras
-github: #[metadata]
+github: [metadata]
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
