@@ -7,7 +7,8 @@ first_name: Phuc
 middle_name: Hong
 last_name: Ngo
 email: ngop@mit.edu
-description: #> # the ">" symbol means to ignore newlines until "footer_text:"Jerry's Online Portfolio.
+description: > # the ">" symbol means to ignore newlines until "footer_text:"
+Jerry's Online Portfolio.
 
 icon: 🔥 # the emoji used as the favicon
 url: # the base hostname & protocol for your site
