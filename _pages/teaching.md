@@ -2,10 +2,8 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: 
 nav: true
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+I was the TA for [CSCI 111](https://www.beloit.edu/academics/computer-science/courses/){:target="\_blank"} Introduction to Object-Oriented Programming taught by Darrah Chavey (F2020) and Donghoon Kwon (S2021), [CSCI 204](https://www.beloit.edu/academics/computer-science/courses/){:target="\_blank"} Data Structures and Algorithm taught by Darrah Chavey (F2020) and Eyad Haj Said (S2021).
