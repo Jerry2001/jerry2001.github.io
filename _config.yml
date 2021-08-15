@@ -7,8 +7,7 @@ first_name: Phuc
 middle_name: Hong
 last_name: Ngo
 email: ngop@mit.edu
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Jerry's Online Portfolio.
+description: #> # the ">" symbol means to ignore newlines until "footer_text:"Jerry's Online Portfolio.
 
 icon: 🔥 # the emoji used as the favicon
 url: # the base hostname & protocol for your site
@@ -71,7 +70,7 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # -----------------------------------------------------------------------------
 
 blog_name:  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_description: #a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -140,7 +139,7 @@ plugins:
   - jemoji
 
 # Extras
-github: [metadata]
+github: #[metadata]
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
