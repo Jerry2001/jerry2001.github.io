@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: /assets/img/12.jpg
+title: The Effect Of Data Augmentation on Deep Representations
+description: Data augmentation is a simple and common technique that increases the model’s robustness to class-preserving transformations. However, our understanding of how data augmentation affects deep representations is limited.
+img: /assets/img/projects/aug_eval.png
 importance: 1
 category: work
 ---
