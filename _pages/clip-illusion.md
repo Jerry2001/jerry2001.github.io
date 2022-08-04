@@ -150,3 +150,463 @@ A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Project page for semantic uncertainty intervals</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script>
+  MathJax = {
+    loader: {load: ['a11y/semantic-enrich']},
+    options: {
+      sre: {
+        speech: 'shallow'  // one of: 'deep', 'shallow', or 'none'
+      },
+      renderActions: {
+        //
+        // Force speech enrichment regardless of the menu settings
+        //
+        enrich: {'[+]': [
+          function (doc) {doc.enrich(true)},
+          function (math, doc) {math.enrich(doc, true)}
+        ]}
+      }
+    },
+    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1000px;
+	}
+
+	h1 {
+		font-weight:300;
+		font-size:24px;
+	}
+
+	code {
+    font-size: 0.8rem;
+    margin: 0 0.1rem;
+    padding: 0.1rem 0.1rem;
+    white-space: nowrap;
+    back
+
+	ground: #efefef;
+    border: 1px solid #d3d3d3;
+    color: #000000;
+    border-radius: 3px;
+}
+
+pre > code {
+    display: block;
+    white-space: pre;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+	.disclaimerbox {
+		background-color: #eee;
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		        15px 15px 0 0px #fff, /* The fourth layer */
+		        15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		        20px 20px 0 0px #fff, /* The fifth layer */
+		        20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		        25px 25px 0 0px #fff, /* The fifth layer */
+		        25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+
+	.vert-cent {
+		position: relative;
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
+
+	hr
+	{
+		border: 0;
+		height: 1.5px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+
+	p.small {
+		font-size: 12px
+	}
+	figure{
+  display: inline-block;
+}
+
+/* optional, use as required */
+figcaption {
+  max-width: 100%;
+  caption-side: bottom;
+}
+</style>
+
+
+
+<html>
+  <head>
+		<title>Semantic uncertainty intervals for disentangled latent spaces</title>
+  </head>
+
+  <body>
+    <br>
+    <center>
+    <span style="font-size:33px">Semantic uncertainty intervals for disentangled latent spaces</span>
+	</center>
+
+	<br> 
+  	<table align=center width=700px>
+  	 <tr>
+		<td align=center width=100px>
+		<center>
+			<span style="font-size:20px"><a href='https://swamiviv.github.io/'>Swami Sankaranarayanan<sup>1</sup></a></span>
+		</center>
+		</td>
+
+		<td align=center width=100px>
+		<center>
+		<span style="font-size:20px"><a href="https://people.eecs.berkeley.edu/~angelopoulos/">Anastasios N. Angelopoulos<sup>2</sup></a></span>
+		</center>
+		</td>
+
+		<td align=center width=100px>
+		<center>
+		<span style="font-size:20px"><a href="https://stephenbates19.github.io/">Stephen Bates<sup>2</sup></a></span>
+		</center>
+		</td>
+
+		 <td align=center width=100px>
+		<center>
+		<span style="font-size:20px"><a href="https://sites.google.com/view/yaniv-romano/">Yaniv Romano<sup>3</sup></a></span>
+		</center>
+		</td>
+
+		<td align=center width=100px>
+		<center>
+		<span style="font-size:20px"><a href="http://web.mit.edu/phillipi/">Phillip &nbsp; Isola<sup>1</sup></a></span>
+		</center>
+		</td>
+
+	 </tr>
+	</table>
+
+	<table align=center width=700px>
+  	 <tr>
+		<td align=center width=100px>
+		<center>
+			<span style="font-size:20px"><sup>1</sup>  MIT CSAIL     &nbsp;&nbsp;</span>
+			<span style="font-size:20px"><sup>2</sup> UC berkeley    &nbsp;&nbsp;</span>
+			<span style="font-size:20px"><sup>3</sup> Technion IIT, Israel</span>
+
+		</center>
+		</center>
+		</td>
+	 </tr>
+	</table>
+
+<!-- 		<br>
+	<table align=center width=700px>
+  	 <tr>
+		<td align=center width=100px>
+		<center>
+		<span style="font-size:18px">To appear in ICML 2022</span></center>
+		</center>
+		</td>
+	 </tr>
+	</table> -->
+
+	<table align=center width=500px style="margin-top:30px">
+  	 <tr>
+<!--		<td align=center width=50px>-->
+<!--		<center>-->
+<!--		<span style="font-size:24px"><a href="https://arxiv.org/abs/2203.17274">[Paper]</a></span>-->
+<!--		</center>-->
+<!--		</td>-->
+
+		<td align=center width=50px>
+		<center>
+		<span style="font-size:24px"><a href="https://github.com/swamiviv/generative_semantic_uncertainty">[Code]</a></span>
+		</center>
+		</td>
+
+	 </tr>
+	</table>
+
+  		  <br>
+  		  <table align=center width=900px>
+  			  <tr>
+  	              <td width=600px>
+  					<center>
+  	                	<a href="teaser.png"><img src = "figures/teaser.png" width="900px"></img></href></a><br>
+					</center>
+  	              </td>
+  	          </tr>
+  		  </table>
+
+  		  <table align=center width=1000>
+			  <center><h1 style="margin-top:30px"><span style="font-size:30px">Abstract</span></h1></center>
+  			  <tr>
+				  <td>
+				  	<br>
+			      	  <p style="text-align:justify;margin-top:-30px">
+					 Meaningful uncertainty quantification in computer vision requires reasoning about semantic information—
+					say, the hair color of the person in a photo or the location of a car on the street. To this end, recent
+					breakthroughs in generative modeling allow us to represent semantic information in disentangled latent
+					spaces, but providing uncertainties on the semantic latent variables has remained challenging. In this work,
+					we provide principled uncertainty intervals that are guaranteed to contain the true semantic factors for
+					any underlying generative model. The method does the following: (1) it uses quantile regression to output
+					a heuristic uncertainty interval for each element in the latent space (2) calibrates these uncertainties such
+					that they contain the true value of the latent for a new, unseen input. The endpoints of these calibrated
+					intervals can then be propagated through the generator to produce interpretable uncertainty visualizations
+					for each semantic factor. This technique reliably communicates semantically meaningful, principled, and
+					instance-adaptive uncertainty in inverse problems like image super-resolution and image completion.
+				  </p>
+  	              		  </td>
+              		  </tr>
+  		  </table>
+
+		<hr>
+			<!-- <table align=center width=550px> -->
+  		  <table align=center width=1000 style="text-align: justify;">
+	 		<center><h1><span style="font-size:30px">Summary</h1></center>
+  			  <tr>
+  			  	<td>
+  			  		<img style="height:300px; margin-right: 20px;" src="figures/celeba_output_visualization.png"/>
+  			  	<td>
+				  Our work addresses the problem of directly giving uncertainty estimates on semantically meaningful
+				  image properties. We make progress on this problem by bringing techniques from quantile regression and
+				  distribution-free uncertainty quantification together with a disentangled latent space learned by a
+				  <em>generative adversarial network</em> (GAN). We call the coordinates of this latent space <em>semantic factors</em>,
+				  as each controls one meaningful aspect of the image, like age or hair color. Our method takes a corrupted image input
+				  and predicts each semantic factor along with an uncertainty interval that is guaranteed to contain the true semantic factor.
+				  When the model is unsure, the intervals are large, and vice-versa. By propagating these intervals through the GAN coordinate-wise,
+				  we can visualize uncertainty directly in image-space (shown left) without resorting to per-pixel intervals.
+				  The result of our procedure is a rich form of uncertainty quantification directly on the estimates of semantic properties of the image.
+  	          </td>
+              </tr>
+  		  </table>
+		  <br>
+
+		<br>
+		  <hr>
+
+  		  <table align=center width=1000 style="text-align: justify;">
+			  <center><h1><span style="font-size:30px">Method</span></h1></center>
+			  <p style="text-align:justify;margin-top:10px">
+				  Generative architectures such as StyleGAN and its variants have been shown to contain a disentangled latent space which factors into interpretable features such as hair color, expression etc.
+				  We use this feature to obtain semantically meaningful uncertainty in the latent space of a generative model. Since the latent space is disentangled, the uncertainty intervals natually
+				  factor into different interpretable dimensions. Thus given an image of a face for instance, we can obtain meaningful uncertainty estimates separately for different aspects of the face such as hair shape / color etc.
+
+				  Our training consists of three core steps:
+				  <ul>
+			  		<li><em>Sample</em> random latent codes $Z$ and the corresponding generated images $Y$ from the generative model. We apply a corruption model (image super-resolution / image masking)
+				  to generate our training data:  $(X,Z)$ pairs where $X$ is the set of corrupted images.</li>
+			  			<table align=center width=900px>
+						 <tr>
+							  <td width=600px>
+							<center>
+								<a href="training_procedure.png"><img src = "figures/training_procedure.png" width="400px"></img></href></a><br>
+							</center>
+							  </td>
+							 </tr>
+					  </table>
+			  		<li> <em>Train</em> an encoder network to predict the latent code along with a lower and upper quantile for each dimension of the latent code. The uncertainty intervals around each
+						latent dimension can be derived trivially using the lower and upper quantile predictions. </li>
+
+			  		<table align=center width=900px>
+						 <tr>
+							  <td width=600px>
+							<center>
+								<a href="intervals_calibration.png"><img src = "figures/intervals_calibration.png" width="400px"></img></href></a><br>
+							</center>
+							  </td>
+							 </tr>
+					  </table>
+
+			  		<li> <em>Calibrate</em> the quantile intervals to provide coverage guarantees. The quantile intervals natually provide a notion of uncertainty around each latent dimension.
+						However, they is no guarantee of coverage i.e. it is unclear if the underying true latent factor is contained in the predicted interval. The calibration procedure provides
+						guarantees this notion of coverage.
+					</li>
+
+		  		  </ul>
+			  </p>
+  		  </table>
+		<br>
+	    <hr>
+  		  <table align=center width=1000 style="text-align: justify;">
+			  <center><h1><span style="font-size:30px">Results</span></h1></center>
+		  </table>
+			<div style='text-align:center'>
+				<table align=center width=1000 style="text-align: justify;">
+	 		<center><h1><span style="font-size:25px">Producing semantic uncertainties</h1></center>
+					<br>
+  			  <tr>
+  			  	<td>
+  			  		<img style="height:300px; margin-right: 40px;" src="figures/clevr_output_viz.png"/>
+  			  	<td>
+				 The image on the left shows a uncertainty prediction output on a sample drawn from the CLEVR dataset trained
+				  generative model. The uncertainty factors naturally into the latent factors, we visualize <em>shape</em> and <em>color</em> here.
+				The lower and upper quantile images yield similar colors, which is predictable from the blurry input.
+				The model predicts that both a cylinder and sphere would be consistent with this blurry input.
+				The calibrated quantiles cover the ground truth color value while the uncalibrated ones do not.
+  	          </td>
+              </tr>
+  		  </table>
+				<br>
+
+    <h1>
+      Adaptivity to varying input corruption
+    </h1>
+				<br>
+
+    <table class="image" align="center" >
+    <tr>
+      <td>
+        <img src="figures/superres_uncertainty_viz.png"
+               width="80%" border="1"
+               alt="none"
+        />
+		  <figcaption>Image super-resolution</figcaption>
+      </td>
+      <td>
+        <img src="figures/inpainting_uncertainty_viz.png"
+               width="79%" border="1"
+               alt="none"
+        />
+		   <figcaption>Image inpainting</figcaption>
+      </td>
+    </tr>
+    </table>
+				<br>
+				 <p style="text-align:justify;margin-top:10px">
+				 For the image super-resolution case, the corruption intensity is varied across each set, the input image in the top row is not corrupted while the input in the bottom row is under-sampled by 16x. In both cases,
+		  we can observe that the most diverse prediction is in the bottom row where the input is corrupted the most.
+					 <br>
+					 <br>
+					 For the image inpainting case, a random mask is applied to the same input image in each row. When there is no mask (1st row), both quantiles are extremely close to the pointwise prediction.
+		  As we increase the regions that are being masked, the predicted intervals expand, as indicated by the variability on the quantile predictions.
+
+	<br><br>
+	<h1>
+      Quantitative results: Set sizes and Calibration
+    </h1>
+
+    <table class="image" align="center" >
+    <tr>
+      <td>
+        <img src="figures/FFHQ_superres_set_sizes.png"
+               width="80%"
+               alt="none"
+        />
+		  <figcaption>Calibrated set sizes adapt to problem difficulty</figcaption>
+      </td>
+      <td>
+        <img src="figures/FFHQ_superres_risk_calibration.png"
+               width="80%"
+               alt="none"
+        />
+		   <figcaption>Calibration procedure guarantees desired coverage</figcaption>
+      </td>
+    </tr>
+    </table>
+
+	<br>
+				<hr>
+				<table align=left width=1000px>
+  			  <tr>
+  	              <td>
+			<left>
+				<h1><span style="font-size:30px">Acknowledgements</span></h1>
+					SS and PI acknowledge the MIT SuperCloud and Lincoln Laboratory Supercomputing Center for providing HPC resources that have contributed to the research results reported within this paper.
+			</left>
+		      </td>
+		</tr>
+		</table>
+
+
+</body>
+</html>
