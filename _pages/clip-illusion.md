@@ -239,6 +239,7 @@ figcaption {
 	<h3>Calibrate:</h3>
 	<img src="/assets/img/projects/clip_illusion/vasarely/vasarely_effect.png" class="img-fluid">
 	<img src="/assets/img/projects/clip_illusion/vasarely/vasarely_effect_1.png" class="img-fluid">
+	<hr>
 	<h2>Ponzo Illusion</h2>
 	<div class="row">
 		<div class="col-sm-5">
@@ -254,5 +255,21 @@ figcaption {
 	<h3>Calibrate:</h3>
 	<img src="/assets/img/projects/clip_illusion/ponzo/ponzo_effect.png" class="img-fluid">
 	<img src="/assets/img/projects/clip_illusion/ponzo/ponzo_effect_1.png" class="img-fluid">
+	<hr>
+	<h2>Simultaneous Contrast Illusion</h2>
+	<div class="row">
+		<div class="col-sm-5">
+			<div class="embed-responsive embed-responsive-1by1">
+				<center><iframe class="embed-responsive-item" src="/assets/img/projects/clip_illusion/contrast/display.mp4"></iframe></center>
+			</div>
+		</div>
+	</div>
+	<br>
+	<h3>Non-Calibrate:</h3>
+	<img src="/assets/img/projects/clip_illusion/contrast/non_contrast_effect.png" class="img-fluid">
+	<img src="/assets/img/projects/clip_illusion/contrast/non_contrast_effect_1.png" class="img-fluid">
+	<h3>Calibrate:</h3>
+	<img src="/assets/img/projects/clip_illusion/contrast/contrast_effect.png" class="img-fluid">
+	<img src="/assets/img/projects/clip_illusion/contrast/contrast_effect_1.png" class="img-fluid">
 </body>
 </html>
