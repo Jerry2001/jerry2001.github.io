@@ -1,7 +1,6 @@
 ---
 layout: page
 permalink: /clip-illusion/
-title: clip-illusion
 description: 
 nav: false
 ---
@@ -223,8 +222,12 @@ figcaption {
 		</td>
 	 </tr>
 	</table>
+	<h1><center>Abstract</center></h1>
+	Recent large machine learning models have achieved impressive performance while showing some shared similarities with human biology. In this work, we pose the question of whether big vision language models, specifically, CLIP, are able to capture optical illusion which is tightened to human biology and perception. We measure the effect by presenting a variety of illusions in the form of images and texts to CLIP and observing how the model’s classification score changes under different conditions of the illusion. Our results show that CLIP is able to capture different types of illusions like lightness illusion and geometrical illusion. We also propose a way to calibrate CLIP score to reduce biases.
+	<br>
+	<h2>Vasarely Illusion</h2>
+	<div class="embed-responsive embed-responsive-1by1">
+	  <center><iframe class="embed-responsive-item" src="/assets/img/projects/clip_illusion/vasarely/display.mp4"></iframe></center>
+	</div>
 </body>
 </html>
-
-# <center>Abstract</center>
-Recent large machine learning models have achieved impressive performance while showing some shared similarities with human biology. In this work, we pose the question of whether big vision language models, specifically, CLIP, are able to capture optical illusion which is tightened to human biology and perception. We measure the effect by presenting a variety of illusions in the form of images and texts to CLIP and observing how the model’s classification score changes under different conditions of the illusion. Our results show that CLIP is able to capture different types of illusions like lightness illusion and geometrical illusion. We also propose a way to calibrate CLIP score to reduce biases.
