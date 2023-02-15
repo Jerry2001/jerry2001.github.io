@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: <a href="https://www.beloit.edu/">Beloit College</a>. Beloit, Wisconsin, USA.
+description: Cambridge, Massachusetts, USA.
 
 profile:
   align: right
@@ -18,4 +18,4 @@ I am a research technician at [McGovern Institute](https://mcgovern.mit.edu/){:t
 
 Before joining BCS, I have been working at MIT CSAIL for some time. At CSAIL, I am fortunate to be supervised by [Phillip Isola](http://web.mit.edu/phillipi/){:target="\_blank"} and [Aleksander Mądry](https://people.csail.mit.edu/madry/){:target="\_blank"} and to be able to collaborate with [Yoon Kim](https://people.csail.mit.edu/yoonkim/){:target="\_blank"}.
 
-I obtained my bachelor's degree at Beloit College in Computer Science and Math.
+I obtained my bachelor's degree at [Beloit College](https://www.beloit.edu/){:target="\_blank"} in Computer Science and Math.
