@@ -16,6 +16,6 @@ social: true  # includes social icons at the bottom of the page
 ---
 I am a research technician at [McGovern Institute](https://mcgovern.mit.edu/){:target="\_blank"} and [MIT BCS](https://bcs.mit.edu/){:target="\_blank"}, supervised by [Jim DiCarlo](https://mcgovern.mit.edu/profile/james-dicarlo/){:target="\_blank"}. My current research interests are computer vision, neuroAI, multimodality learning, and generative models.
 
-Before joining BCS, I have been working at MIT CSAIL for some time. At CSAIL, I am fortunate to be supervised by [Phillip Isola](http://web.mit.edu/phillipi/){:target="\_blank"} and [Aleksander Mądry](https://people.csail.mit.edu/madry/){:target="\_blank"} and to be able to collaborate with [Yoon Kim](https://people.csail.mit.edu/yoonkim/){:target="\_blank"}.
+Before joining BCS, I have been working at <a href="https://www.csail.mit.edu/"><span style="color:#c80015">MIT</span> <span style="color:#c45911">CS</span><span style="color:#ffae00">AI</span><span style="color:gray">L</span></a> for some time. At CSAIL, I am fortunate to be supervised by [Phillip Isola](http://web.mit.edu/phillipi/){:target="\_blank"} and [Aleksander Mądry](https://people.csail.mit.edu/madry/){:target="\_blank"} and to be able to collaborate with [Yoon Kim](https://people.csail.mit.edu/yoonkim/){:target="\_blank"}.
 
 I obtained my bachelor's degree at [Beloit College](https://www.beloit.edu/){:target="\_blank"} in Computer Science and Math.
