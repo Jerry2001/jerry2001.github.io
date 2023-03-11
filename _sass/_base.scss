@@ -19,6 +19,17 @@ a, table.table a {
   }
 }
 
+.gray-url{
+  color: var(--url-gray);
+  &:hover {
+    color: var(--url-gray);
+    text-decoration: underline;
+  }
+  &:hover:after :not(.nav-item.dropdown) {
+    width: 100%;
+  }
+}
+
 blockquote {
   background: var(--global-bg-color);
   border-left: 2px solid var(--global-theme-color);
