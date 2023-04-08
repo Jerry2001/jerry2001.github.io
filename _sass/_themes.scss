@@ -38,7 +38,7 @@ html[data-theme='dark'] {
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
   --url-gray: #{$grey-color-light};
-  --map: block;
+  --map: none;
   
   .fa-sun {
     padding-left: 10px;
