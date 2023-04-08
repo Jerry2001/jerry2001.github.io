@@ -12,7 +12,7 @@ profile:
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 ---
 I am a research technician at [McGovern Institute](https://mcgovern.mit.edu/){:target="\_blank"} and <a class="gray-url" href="https://bcs.mit.edu/" target="_blank"><span style="color:#02516f"></span><span style="color:#01789b">MIT BC</span>S</a>, supervised by [Jim DiCarlo](https://mcgovern.mit.edu/profile/james-dicarlo/){:target="\_blank"}. My current research interests are computer vision, neuroAI, multimodality learning, and generative models.
 

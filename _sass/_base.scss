@@ -19,6 +19,10 @@ a, table.table a {
   }
 }
 
+.hidden_map{
+  display: var(--map);
+}
+
 .gray-url{
   color: var(--url-gray);
   &:hover {

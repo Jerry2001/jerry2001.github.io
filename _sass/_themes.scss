@@ -14,6 +14,7 @@
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color-dark};
   --url-gray: #{$grey-mit-color};
+  --map: none;
 
   .fa-sun {
     display : none;
@@ -37,7 +38,8 @@ html[data-theme='dark'] {
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
   --url-gray: #{$grey-color-light};
-
+  --map: block;
+  
   .fa-sun {
     padding-left: 10px;
     padding-top: 12px;
