@@ -1,0 +1,7 @@
+---
+layout: post
+date: 2023-01-06 15:59:00-0400
+inline: true
+---
+
+(First paper)[https://openreview.net/forum?id=YdGkE4Ugg2C] got accepted for publication at ICLR 2023 Tiny Papers track
