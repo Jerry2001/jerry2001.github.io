@@ -19,6 +19,10 @@ a, table.table a {
   }
 }
 
+.table-responsive {
+    max-height:160px;
+}
+
 .hidden_map{
   display: var(--map);
 }
@@ -82,7 +86,7 @@ blockquote {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 36%;
     .address {
       p { display: block; }
     }
