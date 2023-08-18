@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: teaching
 description: 
-nav: true
+nav: false
 ---
 
 This year, I am the TA for [CSCI 204](https://www.beloit.edu/academics/computer-science/courses/){:target="\_blank"} Data Structures and Algorithm taught by Eyad Haj Said (F2021).

@@ -26,7 +26,7 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
 max_width: 800px
@@ -44,11 +44,11 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: Jerry2001 # your GitHub user name
+github_username: jerry-ngo # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: Jerry_Ngo_# your Twitter handle
+twitter_username: Jerry_Ngo_ # your Twitter handle
 linkedin_username: ngohongphuc2001 # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
+scholar_userid: FJX_ahEAAAAJ # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -58,7 +58,7 @@ blogger_url: # your blogger URL
 work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
-dblp_url: # your DBLP profile url
+dblp_url: https://dblp.org/pid/351/8330.html # your DBLP profile url
 
 contact_note: 
 
