@@ -264,8 +264,8 @@ figcaption {
 	</tbody></table>
 
 	<div class="image-container" style="margin-top:30px">
-    <img src="../_pages/img/main_vis_convex_hull.png" alt="First Image" class="header-img">
-    <img src="../_pages/img/main_vis_35.png" alt="Second Image" class="header-img">
+    <img src="/assets/img/projects/llm_audition/main_vis_convex_hull.png" alt="First Image" class="header-img">
+    <img src="/assets/img/projects/llm_audition/main_vis_35.png" alt="Second Image" class="header-img">
 	</div>
 	<br>
 	<p id="teaser-description" style="text-align: justify;">
@@ -280,7 +280,7 @@ figcaption {
 	<hr>
 	<h1 style="margin-top:30px"><center>Methodology</center></h1>
 	<div class="image-container" style="margin-top:30px">
-    <img src="../_pages/img/main_diagram.png" alt="Second Image" class="header-img">
+    <img src="/assets/img/projects/llm_audition/main_diagram.png" alt="Second Image" class="header-img">
 	</div>
 	<br>
 	<p style="text-align: justify;">
@@ -291,20 +291,20 @@ figcaption {
 	<div class="grid-container">
   	<div class="grid-image-container">
 	    AudioMAE
-	    <img src="../_pages/img/70_30_ptmae_sem_loc_2.png" alt="Second Image" class="header-img">
+	    <img src="/assets/img/projects/llm_audition/70_30_ptmae_sem_loc_2.png" alt="Second Image" class="header-img">
 	  </div>
 	  <div class="grid-image-container">
 	    AudioMAE-FT
-	   	<img src="../_pages/img/70_30_mae_sem.png" alt="Second Image" class="header-img">
+	   	<img src="/assets/img/projects/llm_audition/70_30_mae_sem.png" alt="Second Image" class="header-img">
 	  </div>
 	  <div class="grid-image-container">
 	    PaSST
-	    <img src="../_pages/img/70_30_passt_sem.png" alt="Second Image" class="header-img">
+	    <img src="/assets/img/projects/llm_audition/70_30_passt_sem.png" alt="Second Image" class="header-img">
 	    <!-- Content for the third cell -->
 	  </div>
 	  <div class="grid-image-container">
 	    PANN
-	    <img src="../_pages/img/70_30_cnn14_sem.png" alt="Second Image" class="header-img">
+	    <img src="/assets/img/projects/llm_audition/70_30_cnn14_sem.png" alt="Second Image" class="header-img">
 	    <!-- Content for the fourth cell -->
 	  </div>
 	</div>
