@@ -11,7 +11,7 @@
   Jerry Ngo
 
 
-  | blog
+  | projects
 
 </title>
 <meta name="description" content="Jerry Online Portfolio.">
@@ -37,7 +37,7 @@
 <link rel="manifest" href="/assets/img/site.webmanifest">
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -137,9 +137,11 @@
           
           
           
-          <li class="nav-item ">
+          <li class="nav-item active">
               <a class="nav-link" href="/projects/">
                 projects
+                
+                <span class="sr-only">(current)</span>
                 
               </a>
           </li>
@@ -191,56 +193,246 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
+  <header class="post-header">
+    <h1 class="post-title">projects</h1>
+    <p class="post-description">A growing collection of my cool projects.</p>
+  </header>
+
+  <article>
+    <div class="publications">
+
+
+  <h2 class="year">2021</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-3">
+    <img class="img-fluid" src="/assets/img/projects/aug_eval.png" />
   </div>
+  <div id="aug_eval" class="col-sm-7">
+    
+      <div class="title">The Effect Of Data Augmentation on Deep Representations</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Phuc Ngo, Saachi Jain,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Mądry, Aleksander
+                
+              
+            
+          
+        
+      </div>
 
+      <div class="periodical">
+      
+        <em></em>
+      
+      
+        2021
+      
+      </div>
+    
 
-  <ul class="post-list">
+    <div class="links">
     
-      <li>
-        <h3><a class="post-title" href="/blog/2021/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">May 22, 2021</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
     
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
     
-      <li>
-        <h3><a class="post-title" href="/blog/2015/comments/">a post with comments</a></h3>
-        <p class="post-meta">October 20, 2015</p>
-        <p>an example of a blog post with comments</p>
-      </li>
     
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
+    
+    
+    
+    
+    
     
       
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
+      <a href="/assets/pdf/aug_eval_poster.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">Poster</a>
       
     
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+    
+      
+      <a href="/assets/pdf/aug_eval_slide.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">Slides</a>
+      
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Data augmentation is a simple and common technique that increases the model’s robustness to class-preserving transformations. However, our understanding of how data augmentation affects deep representations is limited. In this work, we attempt to study this further and hypothesize two mechanisms that could happen. The earlier layers of the model could map augmented inputs to similar representations to the standard inputs counterpart. Or, the model could use an entirely different set of prediction rules to classify augmented samples. To test the hypothesis, we trained standard and augmented models to analyze the similarity between their predictions and representations. Our results suggest data augmentation has a range of behavior on deep representations. Depending on the severity of the augmentation, models can vary between learning invariance or learning entirely separate augmented subpopulations.</p>
+    </div>
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-3">
+    <img class="img-fluid" src="/assets/img/stylewav.png" />
+  </div>
+  <div id="stylewav" class="col-sm-7">
+    
+      <div class="title">StyleWav: Guiding Image Synthesis Using Audio</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              Phuc Ngo, Phillip Isola
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em></em>
+      
+      
+        2021
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+    
+    
+      
+      <a href="/assets/pdf/stylewav.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+    
+    
+      
+      <a href="/assets/pdf/stylewav_slide.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">Slides</a>
+      
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Recent works in multimodality systems have enabled image gener-
+ations with instruction from another domain. Specifically, Contrastive Language-Image Pre-training (CLIP) allows multiple downstream tasks such as image synthesis, 3D object generation, and style transfer using text. However, the audio-image generation has not been much explored. In this work, we introduce Style-Wav, an algorithm that is adapted from StyleCLIP. Instead of using text guidance as in StyleCLIP, StyleWav uses audio representation from Wav2CLIP to guide the generated image using StyleGAN. We use synthesized images as a concrete benchmark for the transferred knowledge from the distillation process from
+CLIP to the audio domain. For further application, the model’s code is public at:https://github.com/Jerry2001/StyleWav.</p>
+    </div>
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-3">
+    <img class="img-fluid" src="/assets/img/projects/2048_70.gif" />
+  </div>
+  <div id="2048" class="col-sm-7">
+    
+      <div class="title">An Application of NEAT and HyperNEAT in Solving A Sliding Tile Puzzle</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              Phuc Ngo, Mehmet Dik
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em></em>
+      
+      
+        2021
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+    
+    
+      
+      <a href="/assets/pdf/2048.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+    
+    
+      
+      <a href="/assets/pdf/2048_slide.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">Slides</a>
+      
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Neuroevolution is a set of algorithms that use evolutionary algorithms to optimize neural networks without much domain knowledge. We analyze Neuroevolution of Augmented Topologies (NEAT) and its extension HyperNeat in this paper. NEAT evolves both the topology and weight values of a network along with novel ideas of applying speciation, tracking genes, and evolving from simple structures. HyperNEAT uses similar techniques to evolve networks but instead of using direct graph encoding as in NEAT, it uses indirect graph encoding. We use a stochastic single-player game, 2048, as the benchmark problem to compare two algorithms’ performance. Even though the game is simple, it has the random factor that may pose a challenge in finding a strategy to achieve a high score. The paper analyzes the strategy and the performance of NEAT and HyperNEAT in 2048 with different parameter settings. Furthermore, code and future work are specified at the end of the paper.</p>
+    </div>
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+</li></ol>
 
 
+</div>
+
+  </article>
 
 </div>
 

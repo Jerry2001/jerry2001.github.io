@@ -11,7 +11,7 @@
   Jerry Ngo
 
 
-  | blog
+  | publications
 
 </title>
 <meta name="description" content="Jerry Online Portfolio.">
@@ -37,7 +37,7 @@
 <link rel="manifest" href="/assets/img/site.webmanifest">
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/publications/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -148,9 +148,11 @@
           
           
           
-          <li class="nav-item ">
+          <li class="nav-item active">
               <a class="nav-link" href="/publications/">
                 publications
+                
+                <span class="sr-only">(current)</span>
                 
               </a>
           </li>
@@ -191,56 +193,208 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
+  <header class="post-header">
+    <h1 class="post-title">publications</h1>
+    <p class="post-description">publications by categories in reversed chronological order.</p>
+  </header>
+
+  <article>
+    <div class="publications">
+
+
+  <h2 class="year">2024</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-3">
+    <img class="img-fluid" src="/assets/img/projects/llm_audition/main_vis_convex_hull.png" />
   </div>
+  <div id="ngo_what_2024" class="col-sm-7">
+    
+      <div class="title">What Do Language Models Hear?</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                <em>Ngo, Jerry</em>,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Kim, Yoon
+                
+              
+            
+          
+        
+      </div>
 
+      <div class="periodical">
+      
+        <em>ACL</em>
+      
+      
+        2024
+      
+      </div>
+    
 
-  <ul class="post-list">
+    <div class="links">
     
-      <li>
-        <h3><a class="post-title" href="/blog/2021/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">May 22, 2021</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
     
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
     
-      <li>
-        <h3><a class="post-title" href="/blog/2015/comments/">a post with comments</a></h3>
-        <p class="post-meta">October 20, 2015</p>
-        <p>an example of a blog post with comments</p>
-      </li>
     
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
+    
     
       
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
+      <a href="https://arxiv.org/pdf/2402.16998.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       
     
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+    
+    
+    
+    
+    
+    
+      <a href="https://jerryngo.com/llm_audition/" class="btn btn-sm z-depth-0" role="button" target="_self">Website</a>
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>This work explores whether language models encode meaningfully grounded representations of sounds of objects. We learn a linear probe that retrieves the correct text representation of an object given a snippet of audio related to that object, where the sound representation is given by a pretrained audio model. This probe is trained via a contrastive loss that pushes the language representations and sound representations of an object to be close to one another. After training, the probe is tested on its ability to generalize to objects that were not seen during training. Across different language models and audio models, we find that the probe generalization is above chance in many cases, indicating that despite being trained only on raw text, language models encode grounded knowledge of sounds for some objects.</p>
+    </div>
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+</li></ol>
+
+  <h2 class="year">2023</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-3">
+    <img class="img-fluid" src="/assets/img/vasarely.png" />
+  </div>
+  <div id="clip-illusion" class="col-sm-7">
+    
+      <div class="title">Is CLIP Fooled by Optical Illusions?</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                <em>Ngo, Jerry</em>,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Sankaranarayanan, Swami,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Isola, Phillip
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>ICRL Tiny Papers</em>
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+    
+    
+    
+      
+      <a href="https://openreview.net/pdf?id=YdGkE4Ugg2C" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+    
+      
+      <a href="/assets/pdf/clip_illusion_poster.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">Poster</a>
+      
+    
+    
+    
+      <a href="https://jerryngo.com/clip-illusion/" class="btn btn-sm z-depth-0" role="button" target="_self">Website</a>
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Recent large machine learning models such as CLIP have shown impressive generalization performance for various perception tasks. In this work, we explore to what extent they model the human cognitive process. We focus our attention on how these models perceive optical illusions. We present a simple way to assess the effect by presenting illusions in the form of image and text prompts while observing the changes in models’ output under different illusory strengths. Our results show that CLIP can indeed be fooled by different types of illusions relating to lightness and geometry.</p>
+    </div>
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+</li></ol>
 
 
+</div>
+
+  </article>
 
 </div>
 
